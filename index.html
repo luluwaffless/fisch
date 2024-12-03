@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.4125">
+        <title>fisch details</title>
+        <link rel="icon" type="image/x-icon" href="icons/fisch.png">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <span style="font-size: xx-large; font-weight: bolder;">fisch details</span><br>
+        <span class="gray">updated as of 1.08.1</span><br>
+        <div class="container">
+            <canvas id="gameMap" width="700" height="700"></canvas>
+            <div id="tooltip" class="tooltip"></div>
+            <div class="subcontainer">
+                <textarea id="treasures" style="height: 100%;" cols="12" rows="13" placeholder="treasure chest list; one coordinate per line, only include X and Z parameters separating them with a space; make sure to floor them"></textarea><br>
+                <button id="update">update and route</button>
+            </div>
+        </div><br>
+        <span id="treasurehunt" style="display: none;">
+            <span id="details"></span><button id="treasurehuntbtn">start treasure hunt</button>
+        </span><br>
+        <div class="seasons">
+            <div class="summer season"><span id="summer.title">Summer</span><br><img src="icons/summer.svg"><br><span id="summer.timer"></span></div>
+            <div class="autumn season"><span id="autumn.title">Autumn</span><br><img src="icons/autumn.svg"><br><span id="autumn.timer"></span></div>
+            <div class="winter season"><span id="winter.title">Winter</span><br><img src="icons/winter.svg"><br><span id="winter.timer"></span></div>
+            <div class="spring season"><span id="spring.title">Spring</span><br><img src="icons/spring.svg"><br><span id="spring.timer"></span></div>
+        </div><br><br>
+        <span>made by <a href="https://github.com/luluwaffless/fisch">luluwaffless</a></span>
+        <script type="text/javascript" src="map.js"></script>
+        <script type="text/javascript" src="seasons.js"></script>
+    </body>
+</html>

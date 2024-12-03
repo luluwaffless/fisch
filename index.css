@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "nunitosans";
+    src: url(nunitosans.ttf);
+}
+body {
+    background-color: #06292d;
+    color: white;
+    font-family: "nunitosans";
+    text-align: center;
+}
+textarea {
+    background-color: #0c525a;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    box-shadow: 0px 0px 6px 6px rgba(16, 16, 16, 0.5);
+    border-radius: 10px;
+    margin-left: 25px;
+    color: white;
+    font-family: "nunitosans";
+    resize: none;
+}
+button {
+    background-color: #0c525a;
+    border: none;
+    box-shadow: 0px 0px 6px 6px rgba(16, 16, 16, 0.5);
+    border-radius: 10px;
+    margin-left: 25px;
+    color: white;
+    font-family: "nunitosans";
+    resize: none;
+}
+canvas {
+    border: 2px solid rgba(16, 16, 16, 0.25);
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 6px rgba(16, 16, 16, 0.25);
+    display: block;
+    margin: 20px auto;
+}
+a { color: white; }
+.r { color: #ff8080 }
+.g { color: #80ff80 }
+.b { color: #8080ff }
+.w { color: #ffffff }
+.gray { color: rgba(128, 128, 128, 0.75) }
+.container {
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+}
+.subcontainer {
+    display: block;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+.treasurehunt {
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+#tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 2px solid rgba(16, 16, 16, 0.25);
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 6px rgba(16, 16, 16, 0.25);
+    padding: 5px;
+    font-size: 12px;
+    z-index: 10;
+    display: none;
+    pointer-events: none;
+}
+.title {
+    font-weight: bold;
+    font-size: xx-large;
+}
+.seasons {
+    display: inline-flex;
+    gap: 10px
+}
+.season {
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: larger;
+}
+.season img {
+    width: 75px;
+}
+.current {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.125), rgba(0, 0, 0, 0));
+}
+.summer {
+    color: #ffff7f;
+    background-color: hsl(60, 100%, 5%);
+}
+.autumn {
+    color: #ffaa7f;
+    background-color: hsl(20, 100%, 5%);
+}
+.winter {
+    color: #aaffff;
+    background-color: hsl(180, 100%, 5%);
+}
+.spring {
+    color: #55ff7f;
+    background-color: hsl(135, 100%, 5%);
+}
+.time {
+    font-weight: bold;
+}
