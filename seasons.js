@@ -1,5 +1,5 @@
-const seasons = ["autumn", "winter", "spring", "summer"];
-const seasonDuration = 43200;
+const seasons = ["spring", "summer", "autumn", "winter"];
+const seasonDuration = 34560;
 const formatTime = (s) => `${String(Math.floor(s / 3600)).padStart(2, "0")}:${String(Math.floor((s % 3600) / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
 const formatAbsoluteTime = (t) => new Date(t * 1000).toLocaleString(undefined, { month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "numeric", hour12: true });
 function getCurrentSeasonInfo() {
